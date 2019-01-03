@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="permission.general_w_cu_nick_color" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Change nickname color]]></phrase>
+  <phrase title="w_cu_first_color" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[First color]]></phrase>
+  <phrase title="w_cu_gradient" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Gradient]]></phrase>
+  <phrase title="w_cu_please_enter_correct_color" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Please enter correct color.]]></phrase>
+  <phrase title="w_cu_second_color" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Second color]]></phrase>
+  <phrase title="w_cu_single_color" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Single color]]></phrase>
+  <phrase title="w_cu_username_color" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Username color]]></phrase>
+</phrases>

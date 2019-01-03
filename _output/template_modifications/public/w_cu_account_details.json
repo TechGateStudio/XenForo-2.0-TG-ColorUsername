@@ -1,0 +1,9 @@
+{
+    "template": "account_details",
+    "description": "Add the username color setting.",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:if is=\"$xf.visitor.canUploadAvatar()\">\n\t\t\t\t<xf:formrow\n\t\t\t\t\tlabel=\"{{ phrase('avatar') }}\"\n\t\t\t\t\texplain=\"{{ phrase('click_image_to_change_your_avatar') }}\">\n\n\t\t\t\t\t<xf:avatar user=\"{$xf.visitor}\" size=\"m\" href=\"{{ link('account/avatar') }}\" data-xf-click=\"overlay\" />\n\t\t\t\t</xf:formrow>\n\t\t\t</xf:if>",
+    "replace": "$0\n\n<xf:include template=\"w_cu_username_color\" />"
+}

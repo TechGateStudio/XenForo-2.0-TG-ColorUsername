@@ -1,0 +1,44 @@
+{
+    "permission.general_w_cu_nick_color.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "bb7a378f1b4b8fe3b7f0c63cfba4fc2c"
+    },
+    "w_cu_first_color.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "4dff24d83369a79a3ba6c3d6ca55d076"
+    },
+    "w_cu_gradient.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "5e59525cb7d1d1cd93be0b9f36e9d09a"
+    },
+    "w_cu_please_enter_correct_color.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "23d618f6db8cbb15625775f6a35a48e3"
+    },
+    "w_cu_second_color.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "64e1575323a65d77df5f1fbbc8656938"
+    },
+    "w_cu_single_color.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "531bbd35099eb099dfd90708e9de9e3c"
+    },
+    "w_cu_username_color.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "a530af016c470a6ff90fd7b54a7d72c3"
+    }
+}
