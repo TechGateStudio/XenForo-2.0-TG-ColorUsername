@@ -2,13 +2,20 @@
     "legacy_addon_id": "",
     "title": "[TG] Color Username",
     "description": "",
-    "version_id": 1000011,
-    "version_string": "1.0.0 Alpha 1",
-    "dev": "",
-    "dev_url": "",
+    "version_id": 1000070,
+    "version_string": "1.0.0",
+    "dev": "West",
+    "dev_url": "http://t.me/West99",
     "faq_url": "",
-    "support_url": "",
-    "extra_urls": [],
-    "require": [],
+    "support_url": "http://xenforo.info/threads/32613",
+    "extra_urls": {
+        "XFI": "http://xenforo.info/members/22547"
+    },
+    "require": {
+        "XF": [
+            20100170,
+            "XenForo 2.1+"
+        ]
+    },
     "icon": "fa-pencil"
 }
