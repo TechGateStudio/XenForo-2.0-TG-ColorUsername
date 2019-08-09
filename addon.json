@@ -2,8 +2,8 @@
     "legacy_addon_id": "",
     "title": "[TG] Color Username",
     "description": "",
-    "version_id": 1000070,
-    "version_string": "1.0.0",
+    "version_id": 1000091,
+    "version_string": "1.0.0 Patch Level 1",
     "dev": "West",
     "dev_url": "http://t.me/West99",
     "faq_url": "",
@@ -13,7 +13,7 @@
     },
     "require": {
         "XF": [
-            20100170,
+            2010070,
             "XenForo 2.1+"
         ]
     },
