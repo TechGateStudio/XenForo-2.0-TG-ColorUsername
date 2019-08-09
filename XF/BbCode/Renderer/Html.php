@@ -25,8 +25,13 @@ class Html extends XFCP_Html
         /** @var \West\ColorUsername\XF\Entity\User $user */
         $styles = $user->getColorUsernameStyles();
 
-        $search = 'data-xf-init="member-tooltip"';
+        if ($styles)
+        {
+            $search = 'data-xf-init="member-tooltip"';
+            $parent = str_replace('class="username"', 'class="username username--colored"', $parent);
+            $parent = str_replace($search, $search . " style=\"$styles\"", $parent);
+        }
 
-        return str_replace($search, " style=\"$styles\"", $parent);
+        return $parent;
     }
 }

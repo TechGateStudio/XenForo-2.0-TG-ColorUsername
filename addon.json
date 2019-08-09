@@ -2,14 +2,15 @@
     "legacy_addon_id": "",
     "title": "[TG] Color Username",
     "description": "",
-    "version_id": 1000091,
-    "version_string": "1.0.0 Patch Level 1",
+    "version_id": 1000092,
+    "version_string": "1.0.0 Patch Level 2",
     "dev": "West",
     "dev_url": "http://t.me/West99",
     "faq_url": "",
     "support_url": "http://xenforo.info/threads/32613",
     "extra_urls": {
-        "XFI": "http://xenforo.info/members/22547"
+        "XFI": "http://xenforo.info/members/22547",
+        "GitHub": "https://github.com/TechGateStudio/XenForo-2.0-TG-ColorUsername"
     },
     "require": {
         "XF": [

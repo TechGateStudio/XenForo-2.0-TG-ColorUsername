@@ -12,8 +12,12 @@ class Templater extends XFCP_Templater
 		{
 			if ($user->canChangeUsernameColor())
 			{
-			    $styles = $user->getColorUsernameStyles();
-                $html = str_replace('dir', "style=\"$styles\" dir", $html);
+			    if ($user->w_cu_type !== 'none')
+                {
+                    $styles = $user->getColorUsernameStyles();
+                    $html = str_replace('class="', 'class="username--colored ', $html);
+                    $html = str_replace('dir', "style=\"$styles\" dir", $html);
+                }
 			}
 		}
 		return $html;

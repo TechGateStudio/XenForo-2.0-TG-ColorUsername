@@ -1,4 +1,9 @@
 {
+    "public/w_color_username.less": {
+        "version_id": 1000091,
+        "version_string": "1.0.0 Patch Level 1",
+        "hash": "4b3f8df3cdbaebaf2557894eaa3abb5e"
+    },
     "public/w_cu_username_color.html": {
         "version_id": 1000010,
         "version_string": "1.0.0 Alpha",

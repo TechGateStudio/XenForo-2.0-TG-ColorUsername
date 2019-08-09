@@ -1,0 +1,9 @@
+{
+    "template": "app.less",
+    "description": "",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "preg_replace",
+    "find": "/$/",
+    "replace": "$0\n\n{{ include('w_color_username.less') }}"
+}
