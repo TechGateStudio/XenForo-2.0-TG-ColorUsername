@@ -22,6 +22,8 @@ class Html extends XFCP_Html
             $user = self::$usersWithCustomUsername[$userId];
         }
 
+        if (!$user) return $parent;
+
         /** @var \West\ColorUsername\XF\Entity\User $user */
         $styles = $user->getColorUsernameStyles();
 
