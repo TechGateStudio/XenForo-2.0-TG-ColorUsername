@@ -8,22 +8,21 @@ class Account extends XFCP_Account
 	{
 		$form = parent::accountDetailsSaveProcess($visitor);
 
+		/** @var \West\ColorUsername\XF\Entity\User $visitor */
 		if ($visitor->canChangeUsernameColor())
 		{
-			$form->setup(function() use($visitor)
+			$form->setup(function() use ($visitor)
 			{
-				$visitor->w_cu_type = $this->filter('w_cu_type', 'str');
-				$visitor->w_cu_color = $this->filter('w_cu_color', 'str');
+                $input = $this->filter([
+                    'w_cu_type' => 'str',
+                    'w_cu_color' => 'str',
+                    'w_cu_color_second' => 'str'
+                ]);
 
-				$visitor->w_cu_color_second = $this->filter('w_cu_color_second', 'str');
-
-				if(($visitor->w_cu_type == 'gradient' AND (!$visitor->w_cu_color_second OR !$visitor->w_cu_color)) OR ($visitor->w_cu_type == 'single' AND !$visitor->w_cu_color))
-				{
-					throw $this->exception($this->error(\XF::phraseDeferred('w_cu_please_enter_correct_color')));
-				}
-				
+                $visitor->setUsernameColor($input['w_cu_type'], $input['w_cu_color'], $input['w_cu_color_second']);
 			});
 		}
+
 		return $form;
 	}
 }

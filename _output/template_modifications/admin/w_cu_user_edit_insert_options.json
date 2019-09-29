@@ -1,0 +1,9 @@
+{
+    "template": "user_edit",
+    "description": "",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "\t\t\t\t\t\tlabel=\"{{ phrase('about') }}\"\n\t\t\t\t\t\thint=\"{{ phrase('you_may_use_bb_code') }}\" />",
+    "replace": "$0\n\n<xf:macro template=\"public:w_cu_color_username_macros\" name=\"options\" arg-user=\"{$user}\" />"
+}

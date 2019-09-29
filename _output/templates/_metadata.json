@@ -1,12 +1,17 @@
 {
     "public/w_color_username.less": {
-        "version_id": 1000091,
-        "version_string": "1.0.0 Patch Level 1",
-        "hash": "4b3f8df3cdbaebaf2557894eaa3abb5e"
+        "version_id": 1000170,
+        "version_string": "1.0.1",
+        "hash": "9ea349c2f8dccbb134c5e2240eca3c93"
+    },
+    "public/w_cu_color_username_macros.html": {
+        "version_id": 1000170,
+        "version_string": "1.0.1",
+        "hash": "c4ac6d03f3c22a6f64d2b5551cebe6f2"
     },
     "public/w_cu_username_color.html": {
-        "version_id": 1000010,
-        "version_string": "1.0.0 Alpha",
-        "hash": "1e6c45a93da8ddb093935c67aa6dc210"
+        "version_id": 1000170,
+        "version_string": "1.0.1",
+        "hash": "f9d7bacdef8df6a6d2437eab748966a7"
     }
 }

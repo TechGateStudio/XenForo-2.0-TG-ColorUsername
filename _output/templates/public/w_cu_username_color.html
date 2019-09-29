@@ -1,30 +1,3 @@
 <xf:if is="$xf.visitor.canChangeUsernameColor()">
-	<xf:js src="xf/color_picker.js" min="1" />
-	<xf:radiorow name="w_cu_type" value="{$xf.visitor.w_cu_type}" label="{{ phrase('w_cu_username_color') }}">
-		<xf:option value="none" label="{{ phrase('default') }}" />
-		<xf:option value="single" label="{{ phrase('w_cu_single_color') }}">
-			<xf:macro template="color_picker_macros" name="color_picker"
-					  arg-name="w_cu_color"
-					  arg-value="{$xf.visitor.w_cu_color}"
-					  arg-mapName=""
-					  arg-row="{{ false }}"
-					  arg-required="{{ false }}" />		
-		</xf:option>
-		<xf:option value="gradient" label="{{ phrase('w_cu_gradient') }}">
-			<xf:macro template="color_picker_macros" name="color_picker"
-					  arg-name="w_cu_color"
-					  arg-explain="{{ phrase('w_cu_first_color') }}"
-					  arg-value="{$xf.visitor.w_cu_color}"
-					  arg-mapName=""
-					  arg-row="{{ false }}"
-					  arg-required="{{ false }}" />	
-			<xf:macro template="color_picker_macros" name="color_picker"
-					  arg-name="w_cu_color_second"
-					  arg-explain="{{ phrase('w_cu_second_color') }}"
-					  arg-value="{$xf.visitor.w_cu_color_second}"
-					  arg-mapName=""
-					  arg-row="{{ false }}"
-					  arg-required="{{ false }}" />	
-		</xf:option>
-	</xf:radiorow>
+	<xf:macro template="w_cu_color_username_macros" name="options" arg-user="{$xf.visitor}" />
 </xf:if>

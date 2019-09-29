@@ -40,6 +40,28 @@ class User extends XFCP_User
         return $styles;
     }
 
+    public function setUsernameColor($type, $color, $secondColor)
+    {
+        $this->w_cu_type = $type;
+        $this->w_cu_color = $color;
+        $this->w_cu_color_second = $secondColor;
+    }
+
+    protected function _preSave()
+    {
+        parent::_preSave();
+
+        switch ($this->w_cu_type)
+        {
+            case 'single':
+                if (!$this->w_cu_color) $this->error(\XF::phrase('w_cu_please_enter_correct_color'));
+                break;
+            case 'gradient':
+                if (!$this->w_cu_color || !$this->w_cu_color_second) $this->error(\XF::phrase('w_cu_please_enter_correct_color'));
+                break;
+        }
+    }
+
     public static function getStructure(Structure $structure)
     {
         $structure = parent::getStructure($structure);
